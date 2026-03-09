@@ -36,3 +36,5 @@ nav:
   - 验收与回归: 08-acceptance-and-regression.md
   - 风险与治理: 09-risk-and-governance.md
   - 部署说明: 10-deployment.md
+  - 接口级追踪矩阵: 11-api-traceability-matrix.md
+  - 接口级回归用例: 12-api-regression-test-cases.md

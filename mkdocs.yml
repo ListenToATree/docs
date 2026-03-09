@@ -1,0 +1,38 @@
+site_name: IASNE Product and Tech Refactor Docs
+site_description: Full analysis and refactor plan for IASNE frontend and backend
+site_url: https://listentoatree.github.io/docs/
+repo_name: ListenToATree/docs
+repo_url: https://github.com/ListenToATree/docs
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+docs_dir: site_docs
+
+nav:
+  - 首页: index.md
+  - 现状分析: 01-current-product-analysis.md
+  - 功能保留矩阵: 02-feature-preservation-matrix.md
+  - 现有架构: 03-current-architecture.md
+  - 重构目标与原则: 04-refactor-goals-principles.md
+  - 性能重构方案: 05-performance-refactor-plan.md
+  - 透明度重构方案: 06-transparency-refactor-plan.md
+  - 迁移路线图: 07-migration-roadmap.md
+  - 验收与回归: 08-acceptance-and-regression.md
+  - 风险与治理: 09-risk-and-governance.md
+  - 部署说明: 10-deployment.md

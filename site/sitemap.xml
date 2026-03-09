@@ -44,4 +44,12 @@
          <loc>https://listentoatree.github.io/docs/10-deployment/</loc>
          <lastmod>2026-03-09</lastmod>
     </url>
+    <url>
+         <loc>https://listentoatree.github.io/docs/11-api-traceability-matrix/</loc>
+         <lastmod>2026-03-09</lastmod>
+    </url>
+    <url>
+         <loc>https://listentoatree.github.io/docs/12-api-regression-test-cases/</loc>
+         <lastmod>2026-03-09</lastmod>
+    </url>
 </urlset>

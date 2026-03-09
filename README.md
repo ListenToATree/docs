@@ -41,3 +41,38 @@ git push -u origin main
 该目录已包含 `.github/workflows/deploy.yml`，推送到 `main` 后会自动构建并发布 GitHub Pages。
 
 需要在 GitHub 仓库设置中启用 Pages（Source: GitHub Actions）。
+
+## API 回归测试骨架（pytest）
+
+该仓库已提供基于文档矩阵的 API 回归测试骨架：`tests/api/**`。
+
+安装依赖：
+
+```bash
+cd docs
+python -m pip install -r tests/requirements-test.txt
+```
+
+可选环境变量：
+
+```bash
+export API_BASE_URL=http://127.0.0.1:18000
+export FRONT_BASE_URL=http://127.0.0.1:5173
+export API_TEST_VESSEL_ID=1
+export API_TEST_USERNAME=<your_user>
+export API_TEST_PASSWORD=<your_password>
+export RUN_FRONT_PROXY_TESTS=1
+```
+
+运行测试：
+
+```bash
+cd docs
+pytest tests/api -m "smoke or regression"
+```
+
+仅跑航线优化：
+
+```bash
+pytest tests/api -m route
+```
